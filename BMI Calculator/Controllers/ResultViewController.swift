@@ -10,7 +10,7 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    // Variáveis criadas para receber os dados da nossa calculateViewController
+    /// Data view controller
     var imcValue: String?
     var resultImc: String?
     var color: UIColor?
@@ -27,7 +27,7 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func recalculateButton(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil) // método para que possamos fechar a "janela" atual
+        self.dismiss(animated: true, completion: nil) 
     }
     
 

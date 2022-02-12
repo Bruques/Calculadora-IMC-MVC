@@ -1,10 +1,7 @@
-//
-//  ImcBrain.swift
-//  BMI Calculator
+//  Calculadora IMC
 //
 //  Created by Bruno Nascimento Marques on 03/02/22.
-//  Copyright © 2022 Angela Yu. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
@@ -23,11 +20,11 @@ struct ImcBrain {
         "4" : "Obesidade!"
     ]
     
-    mutating func getHeightValue(heightValue: Double) {
+    mutating func setHeightValue(heightValue: Double) {
         height = heightValue
     }
     
-    mutating func getWeightValue(weightValue: Double) {
+    mutating func setWeightValue(weightValue: Double) {
         weight = weightValue
     }
     
@@ -36,7 +33,6 @@ struct ImcBrain {
     }
     
     func getResult() -> String {
-        
         switch imc {
         case 0..<16:
             return result["0"] ?? ""
@@ -52,7 +48,6 @@ struct ImcBrain {
     }
     
     func getColor() -> UIColor {
-        
         switch imc {
         case 0..<16:
             return .red
